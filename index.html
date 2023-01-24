@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atharv's Portfolio website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/3530c52143.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home </a></li>
+                    <li><a href="#about">About </a></li>
+                    <li><a href="#">Services </a></li>
+                    <li><a href="#portfolio">Portfolio </a></li>
+                    <li><a href="#contact">Contact </a></li>
+                    <i class="fas fa-sharp fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars " onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>IT Engineering student</p>
+                <h1>Hi, I'm <span><strong><u>Atharv</u></strong></span><br>from KJSCE</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----about---- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About ME</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, fuga eligendi. Repellendus maxime praesentium eveniet tempore! Beatae in doloremque cupiditate asperiores animi recusandae! Quam totam veniam consequuntur culpa nemo asperiores accusamus officia laudantium ipsum obcaecati fugiat veritatis dicta id quod optio quos architecto, voluptatum quasi eius impedit quae, necessitatibus dolorum!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills </p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience </p>
+                        <p class="tab-links" onclick="opentab('education')">Education </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>website interfaces</li>
+                            <li><span>Web developement</span><br>Web app developement</li>
+                            <li><span>Digital Marketing</span><br>Social Media Marketing</li>
+                            <li><span>C/C++</span><br>Data Structures</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2019</span><br>KC Gandhi Kalyan</li>
+                            <li><span>Web develope</span><br>Web app developement</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019</span><br>KC Gandhi Kalyan</li>
+                            <li><span>2021</span><br>Allen Integrated</li>
+                            <li><span>2025</span><br>KJ Somaiya College Of Engineering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----portfolio----- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-titles">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Blog Website</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit laboriosam voluptatem dicta deserunt adipisci quas voluptate sint, culpa ipsa nam quos possimus earum, repellendus labore.</p>
+                        <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Perosnal Clock</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit laboriosam voluptatem dicta deserunt adipisci quas voluptate sint, culpa ipsa nam quos possimus earum, repellendus labore.</p>
+                        <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Food ordering clone</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit laboriosam voluptatem dicta deserunt adipisci quas voluptate sint, culpa ipsa nam quos possimus earum, repellendus labore.</p>
+                        <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -------contact----------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>  atharv.kanbargi@somaiya.edu</p>
+                    <p><i class="fa-thin fa-phone"></i>  0123456789</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/_atharv10__/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-CV.pdf.pdf" download class="btn btn2">Download CV / Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2 ">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @Atharv Made with <i class="fa-solid fa-heart"></i> by Easy Tutorial</p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
